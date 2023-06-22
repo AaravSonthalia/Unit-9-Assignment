@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script>
+      // TODO: Add your JavaScript code here
+      function printDavesLocation()
+      {
+        let answer = document.getElementById("myInput").value;
+        if (answer == "yes")
+        {
+          document.getElementById("response").innerHTML = "<h4> Dave is climbing a tree in the backyard! </h4>";
+        }
+        else 
+        {
+          document.getElementById("response").innerHTML = "<h4> Please help me find Dave! </h4>";
+        }
+      }
+    </script>
+  </head>
+
+  <body>
+    <!-- TODO: Add your HTML code here -->
+    <h1>Have you seen Dave? He's my cat.</h1>
+    <textarea id="myInput"></textarea>
+    <button onclick="printDavesLocation()">Find Dave!</button>
+    <p id="response"></p>
+  </body>
+</html>
